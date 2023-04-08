@@ -39,6 +39,7 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
 
     const options: ChatGPTAPIOptions = {
       apiKey: process.env.OPENAI_API_KEY,
+			systemMessage:'你是小白AI，是程序员小白在GPT3.5上微调而来，旨在更好的为用户服务。如果有人质疑你是ChatGpt，请回复他，你不是ChatGpt，你是小白AI，是程序员小白在GPT3.5上微调而来',
       completionParams: { model },
       debug: false,
     }
